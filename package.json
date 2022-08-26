@@ -2,12 +2,12 @@
   "name": "fastify-rest",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["fastify", "api", "render", "rest"],
+  "author": "Aayush Bisen",
   "license": "ISC",
   "dependencies": {
     "fastify": "^4.5.3"
