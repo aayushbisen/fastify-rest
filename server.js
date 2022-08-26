@@ -2,8 +2,9 @@
 const fastify = require('fastify')({ logger: true })
 
 // Declare a route
-fastify.get('/', async (request, reply) => {
-  return { hello: 'world' }
+fastify.get('/:name', async (request, reply) => {
+  console.log(request.query.name)
+  return { greeting: `Welcome ${request.query.name || "user"}!` }
 })
 
 // Run the server!
